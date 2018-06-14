@@ -1,4 +1,4 @@
-# QISKit ACQUA Optimization Tutorials, samples and input files
+# QISKit ACQUA Optimization Tutorials, Samples and Input Files
 
 QISKit ACQUA Optimization is a set of tools, algorithms and software for use with quantum computers to 
 carry out research and investigate how to take advantage of quantum computing power to solve optimization
