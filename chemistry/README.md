@@ -1,4 +1,4 @@
-# QISKit ACQUA Chemistry Tutorials, samples and input files
+# QISKit ACQUA Chemistry Tutorials, Samples and Input Files
 
 This folder contains some Jupyter Notebook examples showing how to run chemistry experiments using in
 QISKit ACQUA Chemistry. There are also Python code files too as well as some hdf5 files containing saved
