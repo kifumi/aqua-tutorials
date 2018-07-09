@@ -4,7 +4,7 @@
 
 &problem
    name=energy
-   enable_substitutions=True
+   auto_substitutions=True
    random_seed=None
 &end
 
