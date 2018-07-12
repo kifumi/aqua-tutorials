@@ -15,7 +15,8 @@
 # limitations under the License.
 # =============================================================================
 
-
+import sys
+sys.path.append("../../qiskit-acqua-oneagainstrest-PR")# should be removed once being pulled!
 
 from datasets import *
 from qiskit_acqua.svm.data_preprocess import *
@@ -25,7 +26,7 @@ from qiskit_acqua import run_algorithm
 
 
 sample_Total, training_input, test_input, class_labels = \
-Wine(training_size=20, test_size=10, n=2, # 2 is the dimension of each data point
+Wine(training_size=40, test_size=10, n=2, # 2 is the dimension of each data point
             PLOT_DATA=False)
 total_array, label_to_labelclass = get_points(test_input, class_labels)
 
