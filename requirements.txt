@@ -1,5 +1,5 @@
-qiskit-acqua
-qiskit-acqua-chemistry
+qiskit-acqua>=0.1.2
+qiskit-acqua-chemistry>=0.1.1
 scipy>=0.19,<1.2
 numpy>=1.13,<1.15
 scikit-learn
