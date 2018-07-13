@@ -41,6 +41,7 @@ params = {
 
 algo_input = get_input_instance('SVMInput')
 algo_input.training_dataset = training_input
+
 algo_input.test_dataset = test_input
 algo_input.datapoints = total_array
 result = run_algorithm(params, algo_input)
