@@ -16,7 +16,6 @@
 # =============================================================================
 
 import sys
-# sys.path.append("../../qiskit-acqua")# should be removed once being pulled!
 
 from datasets import *
 from qiskit_acqua.svm.data_preprocess import *
