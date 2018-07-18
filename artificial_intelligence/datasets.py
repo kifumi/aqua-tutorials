@@ -407,8 +407,7 @@ def Wine(training_size, test_size, n, PLOT_DATA):
     class_labels = [r'A', r'B', r'C']
 
     data, target = datasets.load_wine(True)
-    sample_train, sample_test, label_train, label_test = train_test_split(data, target, test_size=0.1,
-                                                                          random_state=7)
+    sample_train, sample_test, label_train, label_test = train_test_split(data, target, test_size=test_size, random_state=7)
 
     # Now we standarize for gaussian around 0 with unit variance
     std_scale = StandardScaler().fit(sample_train)
