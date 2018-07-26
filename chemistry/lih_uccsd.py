@@ -15,10 +15,10 @@
 # limitations under the License.
 # =============================================================================
 
-from qiskit_acqua_chemistry import ACQUAChemistry
+from qiskit_aqua_chemistry import AQUAChemistry
 
-# Input dictionary to configure QISKit ACQUA Chemistry for the chemistry problem.
-acqua_chemistry_dict = {
+# Input dictionary to configure Qiskit AQUA Chemistry for the chemistry problem.
+aqua_chemistry_dict = {
     'driver': {'name': 'PYSCF'},
     'PYSCF': {'atom': 'Li .0 .0 -0.8; H .0 .0 0.8', 'basis': 'sto3g'},
     'operator': {'name': 'hamiltonian', 'qubit_mapping': 'parity',
@@ -30,6 +30,6 @@ acqua_chemistry_dict = {
     'initial_state': {'name': 'HartreeFock'}
 }
 
-solver = ACQUAChemistry()
-result = solver.run(acqua_chemistry_dict)
+solver = AQUAChemistry()
+result = solver.run(aqua_chemistry_dict)
 print(result['energy'])

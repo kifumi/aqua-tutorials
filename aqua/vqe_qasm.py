@@ -15,8 +15,8 @@
 # limitations under the License.
 # =============================================================================
 
-from qiskit_acqua import Operator, run_algorithm
-from qiskit_acqua.input import get_input_instance
+from qiskit_aqua import Operator, run_algorithm
+from qiskit_aqua.input import get_input_instance
 
 pauli_dict = {
     'paulis': [{"coeff": {"imag": 0.0, "real": -1.052373245772859},

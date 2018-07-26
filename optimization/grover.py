@@ -15,8 +15,8 @@
 # limitations under the License.
 # =============================================================================
 
-from qiskit_acqua.input import get_input_instance
-from qiskit_acqua import run_algorithm
+from qiskit_aqua.input import get_input_instance
+from qiskit_aqua import run_algorithm
 
 sat_cnf = """
 c Example DIMACS 3-sat, with 3 solutions: 1 -2 3 0, -1 -2 -3 0, 1 2 -3 0

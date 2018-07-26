@@ -16,9 +16,9 @@
 # =============================================================================
 
 from datasets import *
-from qiskit_acqua.svm.data_preprocess import *
-from qiskit_acqua.input import get_input_instance
-from qiskit_acqua import run_algorithm
+from qiskit_aqua.svm.data_preprocess import *
+from qiskit_aqua.input import get_input_instance
+from qiskit_aqua import run_algorithm
 
 sample_Total, training_input, test_input, class_labels = \
     ad_hoc_data(training_size=20, test_size=10, n=2, # 2 is the dimension of each data point

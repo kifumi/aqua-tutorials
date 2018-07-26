@@ -18,9 +18,9 @@
 import sys
 
 from datasets import *
-from qiskit_acqua.svm.data_preprocess import *
-from qiskit_acqua.input import get_input_instance
-from qiskit_acqua import run_algorithm
+from qiskit_aqua.svm.data_preprocess import *
+from qiskit_aqua.input import get_input_instance
+from qiskit_aqua import run_algorithm
 
 
 

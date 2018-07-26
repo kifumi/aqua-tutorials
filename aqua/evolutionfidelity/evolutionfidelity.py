@@ -17,9 +17,9 @@
 """
 he Fidelity of Quantum Dynamics.
 This is a simple tutorial example to show how to build an algorithm to extend
-QISKit ACQUA library. Algorithms are designed to be dynamically discovered within
-QISKit ACQUA. For this the entire parent directory 'evolutionfidelity' should
-be moved under the 'qiskit_acqua' directory. The current demonstration notebook
+Qiskit AQUA library. Algorithms are designed to be dynamically discovered within
+Qiskit AQUA. For this the entire parent directory 'evolutionfidelity' should
+be moved under the 'qiskit_aqua' directory. The current demonstration notebook
 shows how to explicitly register the algorithm and works without re-locating this
 code. The former automatic discovery does however allow the algorithm to be found
 and seen in the UI browser, and selected from the GUI when choosing an algorithm.
@@ -30,9 +30,9 @@ import numpy as np
 from qiskit import QuantumRegister
 from qiskit.tools.qi.qi import state_fidelity
 
-from qiskit_acqua import QuantumAlgorithm
-from qiskit_acqua import AlgorithmError
-from qiskit_acqua import get_initial_state_instance
+from qiskit_aqua import QuantumAlgorithm
+from qiskit_aqua import AlgorithmError
+from qiskit_aqua import get_initial_state_instance
 
 
 logger = logging.getLogger(__name__)
@@ -43,7 +43,7 @@ class EvolutionFidelity(QuantumAlgorithm):
     PROP_EXPANSION_ORDER = 'expansion_order'
 
     """
-    A configuration dictionary defines the algorithm to QISKIt ACQUA. It can contain
+    A configuration dictionary defines the algorithm to QISKIt AQUA. It can contain
     the following though this sample does not have them all.
 
     name: Is the registered name and will be used as the case-sensitive key to load an instance

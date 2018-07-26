@@ -1,4 +1,4 @@
-# Sample input file for QISKit ACQUA Chemistry stack
+# Sample input file for Qiskit AQUA Chemistry stack
 # To show how to save an hdf5 file
 #
 &name

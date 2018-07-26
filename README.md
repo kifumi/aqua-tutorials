@@ -1,35 +1,35 @@
-# QISKit ACQUA Tutorials
+# Qiskit AQUA Tutorials
 
-QISKit Algorithms and Circuits for QUantum Applications (QISKit ACQUA) is a library of algorithms for quantum computing
-that uses [QISKit](https://qiskit.org/) to build out and run quantum circuits.
+Qiskit Algorithms and Circuits for QUantum Applications (Qiskit AQUA) is a library of algorithms for quantum computing
+that uses [Qiskit](https://qiskit.org/) to build out and run quantum circuits.
 
 ## Installation and Setup
 
-Please refer to this [installation](INSTALL.md) for installing and setting up QISKit ACQUA tutorials on
+Please refer to this [installation](INSTALL.md) for installing and setting up Qiskit AQUA tutorials on
 your own machine.
 
 ## Contents 
 
-QISKit ACQUA provides a library of cross-domain algorithms upon which domain-specific applications and stacks can be
+Qiskit AQUA provides a library of cross-domain algorithms upon which domain-specific applications and stacks can be
 built. Tutorials, sample code and sample input files may be found here for:
 
-* [QISKit ACQUA](acqua) 
-* [QISKit ACQUA Chemistry](chemistry) 
-* [QISKit ACQUA Optimization](optimization) 
-* [QISKit ACQUA Artificial Intelligence](artificial_intelligence)
+* [Qiskit AQUA](aqua) 
+* [Qiskit AQUA Chemistry](chemistry) 
+* [Qiskit AQUA Optimization](optimization) 
+* [Qiskit AQUA Artificial Intelligence](artificial_intelligence)
 
 More information may be found the [main index notebook](index.ipynb).
 
 ## Contributing
 
-**If you'd like to contribute to QISKit ACQUA Tutorials, please take a look at our**
+**If you'd like to contribute to Qiskit AQUA Tutorials, please take a look at our**
 [contribution guidelines](.github/CONTRIBUTING.rst).
 
 There are a number of ways to get involved:
 
 #### Issues
  
-Issues can be reported with GitHub [issue reporting](https://github.com/QISKit/qiskit-acqua-tutorials/issues) for this
+Issues can be reported with GitHub [issue reporting](https://github.com/Qiskit/aqua-tutorials/issues) for this
 repository. Select `New issue`, fill in a descriptive title, and provide as much detail as is needed for the issue
 to be reproduced.
 
@@ -42,9 +42,9 @@ of the repository from the `master` branch and create a
 
 ## Authors
 
-QISKit ACQUA was inspired, authored and brought about by the collective work of a team of researchers.
+Qiskit AQUA was inspired, authored and brought about by the collective work of a team of researchers.
 
-QISKit ACQUA continues now to grow with the help and work of [many people](./CONTRIBUTORS.md), who contribute
+Qiskit AQUA continues now to grow with the help and work of [many people](./CONTRIBUTORS.md), who contribute
 to the project at different levels.
 
 ## License
