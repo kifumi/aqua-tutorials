@@ -15,7 +15,7 @@
 # limitations under the License.
 # =============================================================================
 
-from qiskit_aqua_chemistry import AQUAChemistry
+from qiskit_aqua_chemistry import AquaChemistry
 
 # Input dictionary to configure Qiskit AQUA Chemistry for the chemistry problem.
 aqua_chemistry_dict = {
@@ -30,6 +30,6 @@ aqua_chemistry_dict = {
     'initial_state': {'name': 'HartreeFock'}
 }
 
-solver = AQUAChemistry()
+solver = AquaChemistry()
 result = solver.run(aqua_chemistry_dict)
 print(result['energy'])
