@@ -1,7 +1,7 @@
-# Qiskit AQUA Chemistry Tutorials, Samples and Input Files
+# Qiskit Aqua Chemistry Tutorials, Samples and Input Files
 
 This folder contains some Jupyter Notebook examples showing how to run chemistry experiments using in
-Qiskit AQUA Chemistry. There are also Python code files too as well as some hdf5 files containing saved
+Qiskit Aqua Chemistry. There are also Python code files too as well as some hdf5 files containing saved
 molecular data that may be used in experiments.
 
 These example programs and notebooks show how to use the dictionary equivalent form of
@@ -14,5 +14,5 @@ For more detail see the main [index](../index.ipynb#chemistry)
 ## Input files
 
 The folder [input_files](input_files) contains a number of example input files that can be loaded 
-and run by the Qiskit AQUA Chemistry [GUI](https://github.com/Qiskit/aqua-chemistry/README.md#gui) or by the
+and run by the Qiskit Aqua Chemistry [GUI](https://github.com/Qiskit/aqua-chemistry/README.md#gui) or by the
 [command line](https://github.com/Qiskit/aqua-chemistry/README.md#command-line) tool.
