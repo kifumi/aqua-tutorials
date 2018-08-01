@@ -35,6 +35,6 @@ molecule = 'H .0 .0 -{0}; H .0 .0 {0}'
 for i in range(21):
     d = (0.5 + i*0.5/20)/2
     input_dict['PYSCF']['atom'] = molecule.format(d)
-    solver = qiskit_aqua_chemistry.AQUAChemistry()
+    solver = qiskit_aqua_chemistry.AquaChemistry()
     result = solver.run(input_dict)
     print('{:.4f} : {}'.format(d*2, result['energy']))
