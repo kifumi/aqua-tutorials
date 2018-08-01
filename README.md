@@ -1,28 +1,28 @@
-# Qiskit AQUA Tutorials
+# Qiskit Aqua Tutorials
 
-Qiskit Algorithms and Circuits for QUantum Applications (Qiskit AQUA) is a library of algorithms for quantum computing
-that uses [Qiskit](https://qiskit.org/) to build out and run quantum circuits.
+Qiskit Algorithms for QUantum Applications (Qiskit Aqua) is a library of algorithms for quantum computing
+that uses [Qiskit Terra](https://qiskit.org/terra) to build out and run quantum circuits.
 
 ## Installation and Setup
 
-Please refer to this [installation](INSTALL.md) for installing and setting up Qiskit AQUA tutorials on
+Please refer to this [installation](INSTALL.md) for installing and setting up Aqua tutorials on
 your own machine.
 
 ## Contents 
 
-Qiskit AQUA provides a library of cross-domain algorithms upon which domain-specific applications and stacks can be
+Aqua provides a library of cross-domain algorithms upon which domain-specific applications and stacks can be
 built. Tutorials, sample code and sample input files may be found here for:
 
-* [Qiskit AQUA](aqua) 
-* [Qiskit AQUA Chemistry](chemistry) 
-* [Qiskit AQUA Optimization](optimization) 
-* [Qiskit AQUA Artificial Intelligence](artificial_intelligence)
+* [Aqua](aqua) 
+* [Aqua Chemistry](chemistry) 
+* [Aqua Optimization](optimization) 
+* [Aqua Artificial Intelligence](artificial_intelligence)
 
 More information may be found the [main index notebook](index.ipynb).
 
 ## Contributing
 
-**If you'd like to contribute to Qiskit AQUA Tutorials, please take a look at our**
+**If you'd like to contribute to the Aqua Tutorials, please take a look at our**
 [contribution guidelines](.github/CONTRIBUTING.rst).
 
 There are a number of ways to get involved:
@@ -42,9 +42,9 @@ of the repository from the `master` branch and create a
 
 ## Authors
 
-Qiskit AQUA was inspired, authored and brought about by the collective work of a team of researchers.
+Aqua was inspired, authored and brought about by the collective work of a team of researchers.
 
-Qiskit AQUA continues now to grow with the help and work of [many people](./CONTRIBUTORS.md), who contribute
+Aqua continues now to grow with the help and work of [many people](./CONTRIBUTORS.md), who contribute
 to the project at different levels.
 
 ## License

@@ -17,7 +17,7 @@
 
 from qiskit_aqua_chemistry import AquaChemistry
 
-# Input dictionary to configure Qiskit AQUA Chemistry for the chemistry problem.
+# Input dictionary to configure Qiskit Aqua Chemistry for the chemistry problem.
 aqua_chemistry_dict = {
     'driver': {'name': 'PYSCF'},
     'PYSCF': {'atom': 'Li .0 .0 -0.8; H .0 .0 0.8', 'basis': 'sto3g'},
