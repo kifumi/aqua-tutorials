@@ -172,7 +172,7 @@
         }
     },
     "problem": {
-        "name": "dynamics",
+        "name": "EOH",
         "random_seed": null
     }
 }
