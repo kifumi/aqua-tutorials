@@ -1,6 +1,6 @@
 {
     "algorithm": {
-        "name": "SVM_Variational",
+        "name": "QSVM.Variational",
         "circuit_depth": 3
     },
     "problem": {"name": "svm_classification"},

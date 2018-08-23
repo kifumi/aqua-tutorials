@@ -1,6 +1,6 @@
 {
     "algorithm": {
-        "name": "SVM_QKernel"},
+        "name": "QSVM.Kernel"},
     "problem": {"name": "svm_classification"},
     "backend": {"name": "local_qasm_simulator", "shots":1000},
 

@@ -3,7 +3,7 @@
         "evo_time": 1.0,
         "expansion_mode": "trotter",
         "expansion_order": 1,
-        "name": "Dynamics",
+        "name": "EOH",
         "num_time_slices": 1,
         "operator_mode": "paulis",
         "paulis_grouping": "default"

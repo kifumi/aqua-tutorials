@@ -16,7 +16,7 @@
 # =============================================================================
 
 from datasets import *
-from qiskit_aqua.svm_qkernel.data_preprocess import *
+from qiskit_aqua.algorithms.many_sample.qsvm.data_preprocess import *
 
 from qiskit_aqua.input import get_input_instance
 from qiskit_aqua import run_algorithm
@@ -28,7 +28,7 @@ total_array, label_to_labelclass = get_points(test_input, class_labels)
 
 params = {
     'problem': {'name': 'svm_classification', 'random_seed': 10598},
-    'algorithm': {'name': 'SVM_Variational'},
+    'algorithm': {'name': 'QSVM.Variational'},
     'backend': {'name': 'local_qasm_simulator', 'shots': 1024},
     'optimizer': {'name': 'SPSA', 'max_trials': 10, 'save_steps': 1},
     'variational_form': {'name': 'RYRZ', 'depth': 3},
