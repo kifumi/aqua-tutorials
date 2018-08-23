@@ -172,7 +172,7 @@
         }
     },
     "problem": {
-        "name": "EOH",
+        "name": "eoh",
         "random_seed": null
     }
 }
