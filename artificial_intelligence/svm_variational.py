@@ -16,7 +16,7 @@
 # =============================================================================
 
 from datasets import *
-from qiskit_aqua.svm.data_preprocess import *
+from qiskit_aqua.svm_qkernel.data_preprocess import *
 
 from qiskit_aqua.input import get_input_instance
 from qiskit_aqua import run_algorithm
