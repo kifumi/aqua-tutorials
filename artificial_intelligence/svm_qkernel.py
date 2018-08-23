@@ -21,16 +21,19 @@ from qiskit_aqua.input import get_input_instance
 from qiskit_aqua import run_algorithm
 
 sample_Total, training_input, test_input, class_labels = \
-    ad_hoc_data(training_size=20, test_size=10, n=2, # 2 is the dimension of each data point
+    ad_hoc_data(training_size=10, test_size=10, n=2, # 2 is the dimension of each data point
                 gap=0.3, PLOT_DATA=False)
 
 
 total_array, label_to_labelclass = get_points(test_input, class_labels)
 
 params = {
-    'problem': {'name': 'svm_classification'},
-    'backend': {'name': 'local_qasm_simulator', 'shots': 1000},
-    'algorithm': {'name': 'SVM_QKernel', 'print_info': True}
+    'problem': {'name': 'svm_classification', 'random_seed': 10598},
+    'algorithm': {
+        'name': 'SVM_QKernel',
+        'multiclass_alg':'error_correcting_code'
+    },
+    'backend': {'name': 'local_qasm_simulator_py', 'shots': 1024}
 }
 
 algo_input = get_input_instance('SVMInput')
