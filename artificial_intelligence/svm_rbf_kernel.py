@@ -28,8 +28,8 @@ total_array, label_to_labelclass = get_points(test_input, class_labels)
 params = {
     'problem': {'name': 'svm_classification'},
     'algorithm': {
-        'name': 'SVM_RBF_Kernel',
-        'print_info': True
+        'name': 'SVM_Classical',
+        'multiclass_alg': 'error_correcting_code'
     }
 }
 
