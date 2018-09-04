@@ -16,30 +16,31 @@
 # =============================================================================
 
 from datasets import *
-from qiskit_aqua.algorithms.many_sample.qsvm.data_preprocess import *
+from qiskit_aqua.utils import split_dataset_to_data_and_labels
 from qiskit_aqua.input import get_input_instance
 from qiskit_aqua import run_algorithm
 
 sample_Total, training_input, test_input, class_labels = \
-    ad_hoc_data(training_size=10, test_size=10, n=2, # 2 is the dimension of each data point
+    ad_hoc_data(training_size=10, test_size=10, n=2,  # 2 is the dimension of each data point
                 gap=0.3, PLOT_DATA=False)
 
 
-total_array, label_to_labelclass = get_points(test_input, class_labels)
+datapoints, class_to_label = split_dataset_to_data_and_labels(test_input)
 
 params = {
     'problem': {'name': 'svm_classification', 'random_seed': 10598},
     'algorithm': {
-        'name': 'QSVM.Kernel',
-        'multiclass_alg':'error_correcting_code'
+        'name': 'QSVM.Kernel'
     },
-    'backend': {'name': 'local_qasm_simulator_py', 'shots': 1024}
+    'backend': {'name': 'local_qasm_simulator', 'shots': 1024},
+    'feature_map': {'name': 'SecondOrderExpansion', 'depth': 2, 'entanglement': 'linear'}
 }
 
 algo_input = get_input_instance('SVMInput')
 algo_input.training_dataset = training_input
 algo_input.test_dataset = test_input
-algo_input.datapoints = total_array
+algo_input.datapoints = datapoints[0]  # 0 is data, 1 is labels
+
 result = run_algorithm(params, algo_input)
 print(result)
 
@@ -47,5 +48,3 @@ print(result)
 # kernel_matrix = result['training_kernel_matrix']
 # img = plt.imshow(np.asmatrix(kernel_matrix),interpolation='nearest',origin='upper',cmap='bone_r')
 # plt.show()
-
-
