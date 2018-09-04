@@ -16,26 +16,31 @@
 # =============================================================================
 
 from datasets import *
-from qiskit_aqua.algorithms.many_sample.qsvm.data_preprocess import *
+from qiskit_aqua.utils import split_dataset_to_data_and_labels
 from qiskit_aqua.input import get_input_instance
 from qiskit_aqua import run_algorithm
 
-sample_Total, training_input, test_input, class_labels = ad_hoc_data(
-    training_size=20, test_size=10, n=2, gap=0.3, PLOT_DATA=False) # n=2 is the dimension of each data point
-total_array, label_to_labelclass = get_points(test_input, class_labels)
+
+n = 2  # dimension of each data point
+
+sample_Total, training_input, test_input, class_labels = ad_hoc_data(training_size=10,
+                                                                     test_size=10,
+                                                                     n=n, gap=0.3, PLOT_DATA=False)
+
+datapoints, class_to_label = split_dataset_to_data_and_labels(test_input)
 
 
 params = {
     'problem': {'name': 'svm_classification'},
     'algorithm': {
-        'name': 'SVM',
-        'multiclass_alg': 'error_correcting_code'
+        'name': 'SVM'
     }
 }
 
 algo_input = get_input_instance('SVMInput')
 algo_input.training_dataset = training_input
 algo_input.test_dataset = test_input
-algo_input.datapoints = total_array
+algo_input.datapoints = datapoints[0]  # 0 is data, 1 is labels
+
 result = run_algorithm(params, algo_input)
 print(result)
