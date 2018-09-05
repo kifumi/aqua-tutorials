@@ -1,6 +1,6 @@
 {
     "algorithm": {
-        "name": "SVM_RBF_Kernel"
+        "name": "SVM"
     },
     "problem": {"name": "svm_classification"},
     "input": {
