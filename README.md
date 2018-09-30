@@ -9,9 +9,7 @@ Please refer to this [installation](INSTALL.md) for installing and setting up Aq
 your own machine.
 
 ## Contents 
-
-Aqua provides a library of cross-domain algorithms upon which domain-specific applications and stacks can be
-built. Tutorials, sample code and sample input files may be found here for:
+Aquaは、ドメイン固有のアプリケーションとスタックを構築できるクロスドメインアルゴリズムのライブラリを提供しています。 チュートリアル、サンプルコード、およびサンプル入力ファイルは、次の場所にあります。:
 
 * [Aqua](aqua) 
 * [Aqua Chemistry](chemistry) 
